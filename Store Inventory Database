@@ -1,0 +1,21 @@
+CREATE TABLE store_inventory (id INTEGER PRIMARY KEY, name TEXT, aisle INTEGER, stock INTEGER, price INTEGER);
+
+INSERT INTO store_inventory VALUES (1, "Pack of Crew Neck T-Shirts", 3, 21, 5.99);
+INSERT INTO store_inventory VALUES (2, "Pack of Socks", 3, 13, 3.99);
+INSERT INTO store_inventory VALUES (3, "Coco Powder", 5, 26, 8.99);
+INSERT INTO store_inventory VALUES (4, "Moisturizing Lotion", 8, 13, 17.99);
+INSERT INTO store_inventory VALUES (5, "Face Wash", 8, 6, 15.99);
+INSERT INTO store_inventory VALUES (6, "Louisiana Ribs", 10, 2, 22.99);
+INSERT INTO store_inventory VALUES (7, "Sweet Potato", 12, 13, 7.99);
+INSERT INTO store_inventory VALUES (8, "Sour Patches", 5, 22, 2.99);
+INSERT INTO store_inventory VALUES (9, "Arizona Tea", 5, 30, 0.99);
+INSERT INTO store_inventory VALUES (10, "Hockey Stick", 15, 5, 37.99);
+INSERT INTO store_inventory VALUES (11, "Pants", 3, 6, 14.99);
+INSERT INTO store_inventory VALUES (12, "shoes", 3, 10, 20.00);
+INSERT INTO store_inventory VALUES (13, "Mug", 5, 6, 4.99);
+INSERT INTO store_inventory VALUES (14, "PC Mouse", 20, 3, 34.99);
+INSERT INTO store_inventory VALUES (15, "Keyboard", 20, 9, 68.99);
+
+SELECT * FROM store_inventory;
+
+SELECT name from store_inventory where price <= 10 order by price asc;
