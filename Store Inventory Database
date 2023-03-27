@@ -16,6 +16,11 @@ INSERT INTO store_inventory VALUES (13, "Mug", 5, 6, 4.99);
 INSERT INTO store_inventory VALUES (14, "PC Mouse", 20, 3, 34.99);
 INSERT INTO store_inventory VALUES (15, "Keyboard", 20, 9, 68.99);
 
+- Show all inventory in database
 SELECT * FROM store_inventory;
-
+- Show names of products that are under 10 dollars in ascending order
 SELECT name from store_inventory where price <= 10 order by price asc;
+
+I also put the variable "Stock" to keep track of items, and analyze that by
+
+SELECT name, stock from store_inventory ORDER BY stock asc;
